@@ -6,6 +6,18 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./about-us.component.css']
 })
 export class AboutUsComponent implements OnInit {
+  
+  name = "Shangeeran";
+  getDetails(){
+    return this.name
+  }
+  getName(){
+    alert("Hi Shangeeran")
+  }
+
+  myEvent(evt: any){
+    console.warn(evt)
+  }
 
   constructor() { }
 

@@ -9,6 +9,7 @@ import { LoginComponent } from './login/login.component';
 import { SignupComponent } from './signup/signup.component';
 import { HomeComponent } from './home/home.component';
 import { NgImageSliderModule } from 'ng-image-slider';
+import { MyserviceService } from './myservice.service';
 
 @NgModule({
   declarations: [
@@ -24,7 +25,7 @@ import { NgImageSliderModule } from 'ng-image-slider';
     AppRoutingModule,
     NgImageSliderModule
   ],
-  providers: [],
+  providers: [MyserviceService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

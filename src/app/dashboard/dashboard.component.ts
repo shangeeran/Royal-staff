@@ -7,6 +7,10 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DashboardComponent implements OnInit {
 
+  getVal(val: any){
+    console.warn(val)
+  }
+
   constructor() { }
 
   ngOnInit(): void {

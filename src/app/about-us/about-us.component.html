@@ -1,1 +1,22 @@
 <p>about-us works!</p>
+<h2>{{getDetails()}}</h2>
+<!-- <button (click)="getName()">Get My Name</button> <br><br>
+<button (Click)="myEvent('This is click event')" >Click me</button> <br><br>
+<input type="text" (keyup)="myEvent('This is keyup event')"> <br><br>
+<input type="text" #box (keyup)="myEvent(box.value)"> <br><br>
+<input type="text" #box (keydown)="myEvent(box.value)" /> <br><br> 
+<input type="text" #box (keyup.enter)="myEvent(box.value)"> <br><br>
+<input type="text" #box (blur)="myEvent('blur event')"> <br><br> -->
+<input type="text" #box (keyup.enter)="myEvent(box.value)" #box (blur)="myEvent('blur event')"> <br><br>
+
+<h1 
+    (mouseover)="myEvent('Mouse over event')"
+    style="background-color: blue;">
+    Mouse over
+</h1>
+
+<h1 
+    (mouseleave)="myEvent('Mouse leave event')"
+    style="background-color: red;">
+    Mouse leave
+</h1>
